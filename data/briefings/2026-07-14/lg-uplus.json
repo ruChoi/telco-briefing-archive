@@ -4,8 +4,8 @@
   "carrier": "lg-uplus",
   "carrier_label": "LG U+",
   "title": "7/14 LG U+ 브리핑",
-  "summary": "신규 59건 · 마감 임박 0건 · 진행 중 0건. 오늘 챙길 것: [로밍] 5G커버리지 100개국 달성 기념이벤트.",
-  "generated_at": "2026-07-14T17:01:07+09:00",
+  "summary": "신규 58건 · 마감 임박 1건 · 진행 중 0건. 오늘 챙길 것: [로밍] 5G커버리지 100개국 달성 기념이벤트.",
+  "generated_at": "2026-07-14T17:14:16+09:00",
   "sections": [
     {
       "kind": "highlight",
@@ -263,16 +263,6 @@
             "end": "2026-07-19"
           },
           "url": "https://www.lguplus.com/benefit-event/ongoing/82341",
-          "source": "U+ 진행중 이벤트"
-        },
-        {
-          "title": "[로밍] 5G커버리지 100개국 달성 기념이벤트",
-          "summary": "[로밍] 5G커버리지 100개국 달성 기념이벤트 — 로밍 충전 데이터 1GB 증정",
-          "period": {
-            "start": "2026-06-11",
-            "end": "2026-07-14"
-          },
-          "url": "https://www.lguplus.com/benefit-event/ongoing/82332",
           "source": "U+ 진행중 이벤트"
         },
         {
@@ -621,7 +611,18 @@
     },
     {
       "kind": "closing",
-      "items": []
+      "items": [
+        {
+          "title": "[로밍] 5G커버리지 100개국 달성 기념이벤트",
+          "summary": "[로밍] 5G커버리지 100개국 달성 기념이벤트 — 로밍 충전 데이터 1GB 증정",
+          "period": {
+            "start": "2026-06-11",
+            "end": "2026-07-14"
+          },
+          "url": "https://www.lguplus.com/benefit-event/ongoing/82332",
+          "source": "U+ 진행중 이벤트"
+        }
+      ]
     },
     {
       "kind": "ongoing",
