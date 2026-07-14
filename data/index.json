@@ -1,0 +1,57 @@
+{
+  "updated_at": "2026-07-14T16:55:41+09:00",
+  "briefings": [
+    {
+      "date": "2026-07-14",
+      "carrier": "skt",
+      "carrier_label": "SKT",
+      "title": "7/14 SKT 브리핑",
+      "summary": "신규 13건 · 마감 임박 11건 · 진행 중 0건.",
+      "counts": {
+        "new": 12,
+        "closing": 11,
+        "ongoing": 0
+      },
+      "path": "data/briefings/2026-07-14/skt.json"
+    },
+    {
+      "date": "2026-07-14",
+      "carrier": "lg-uplus",
+      "carrier_label": "LG U+",
+      "title": "7/14 LG U+ 브리핑",
+      "summary": "신규 58건 · 마감 임박 1건 · 진행 중 0건. 오늘 챙길 것: [로밍] 5G커버리지 100개국 달성 기념이벤트.",
+      "counts": {
+        "new": 58,
+        "closing": 1,
+        "ongoing": 0
+      },
+      "path": "data/briefings/2026-07-14/lg-uplus.json"
+    },
+    {
+      "date": "2026-07-14",
+      "carrier": "kt",
+      "carrier_label": "KT",
+      "title": "7/14 KT 브리핑",
+      "summary": "신규 14건 · 마감 임박 0건 · 진행 중 0건.",
+      "counts": {
+        "new": 14,
+        "closing": 0,
+        "ongoing": 0
+      },
+      "path": "data/briefings/2026-07-14/kt.json"
+    },
+    {
+      "date": "2026-07-13",
+      "carrier": "skt",
+      "carrier_label": "SKT",
+      "title": "7/13 SKT 브리핑",
+      "summary": "신규 1건. 서울랜드 T 멤버십 50% 할인 신규 게시, 나머지 진행 중 이벤트 변동 없음.",
+      "counts": {
+        "new": 1,
+        "closing": 0,
+        "ongoing": 4
+      },
+      "path": "data/briefings/2026-07-13/skt.json"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-14",
+  "carrier": "kt",
+  "carrier_label": "KT",
+  "title": "7/14 KT 브리핑",
+  "summary": "신규 14건 · 마감 임박 0건 · 진행 중 0건.",
+  "generated_at": "2026-07-14T16:55:41+09:00",
+  "sections": [
+    {
+      "kind": "new",
+      "items": [
+        {
+          "title": "KT 이벤트 #13920 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #13920 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2026-07-10",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=13920",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #13879 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #13879 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2026-06-15",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=13879",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #13685 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #13685 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2026-04-30",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=13685",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #12838 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #12838 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2026-04-01",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=12838",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #11707 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #11707 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2026-04-01",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=11707",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #13794 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #13794 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2026-03-03",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=13794",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #13368 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #13368 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2025-12-26",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=13368",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #12899 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #12899 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2025-12-17",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=12899",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #13666 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #13666 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2025-12-17",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=13666",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #12135 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #12135 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2025-12-17",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=12135",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #13909 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #13909 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2025-04-10",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=13909",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #13916 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #13916 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2025-04-10",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=13916",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #13896 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #13896 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2025-04-10",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=13896",
+          "source": "KT 이벤트 sitemap (폴백)"
+        },
+        {
+          "title": "KT 이벤트 #13914 (제목은 원문 확인 — API 폴백 수집)",
+          "summary": "KT 이벤트 #13914 (제목은 원문 확인 — API 폴백 수집)",
+          "period": {
+            "start": "2025-04-10",
+            "end": null
+          },
+          "url": "https://event.kt.com/html/event/ongoing_event_view.html?pcEvtNo=13914",
+          "source": "KT 이벤트 sitemap (폴백)"
+        }
+      ]
+    },
+    {
+      "kind": "closing",
+      "items": []
+    },
+    {
+      "kind": "ongoing",
+      "items": []
+    }
+  ],
+  "failed_sources": [
+    "KT 이벤트"
+  ]
+}

@@ -1,0 +1,106 @@
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --text: #1c2330;
+  --muted: #6b7480;
+  --line: #e3e6eb;
+  --accent: #2b5fd9;
+  --skt: #ea002c;
+  --kt: #d71826;
+  --lg-uplus: #e6007e;
+  --new: #1a7f4b;
+  --closing: #c0392b;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
+
+header.site {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  padding: 8px 0 16px;
+}
+header.site h1 { font-size: 1.35rem; margin: 0; }
+header.site h1 a { color: var(--text); }
+header.site .sub { color: var(--muted); font-size: 0.9rem; }
+header.site nav { margin-left: auto; font-size: 0.9rem; }
+
+.tabs { display: flex; gap: 8px; margin: 12px 0 20px; flex-wrap: wrap; }
+.tabs button {
+  border: 1px solid var(--line); background: var(--card); color: var(--text);
+  padding: 7px 16px; border-radius: 999px; cursor: pointer; font-size: 0.92rem;
+}
+.tabs button.active { background: var(--text); color: #fff; border-color: var(--text); }
+
+.month-group h2 {
+  font-size: 0.95rem; color: var(--muted); font-weight: 600;
+  margin: 28px 0 10px; letter-spacing: 0.02em;
+}
+
+.cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 640px) { .cards { grid-template-columns: 1fr 1fr; } }
+
+.card {
+  display: block; background: var(--card); border: 1px solid var(--line);
+  border-radius: 12px; padding: 16px 18px; color: var(--text);
+}
+.card:hover { border-color: var(--accent); text-decoration: none; box-shadow: 0 2px 10px rgba(20,40,90,.06); }
+.card .meta { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: var(--muted); }
+.card h3 { margin: 8px 0 6px; font-size: 1.05rem; }
+.card p { margin: 0 0 10px; font-size: 0.9rem; color: #3d4653;
+  display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.card .counts { font-size: 0.82rem; color: var(--muted); }
+.card .counts .new { color: var(--new); font-weight: 600; }
+.card .counts .closing { color: var(--closing); font-weight: 600; }
+
+.badge {
+  display: inline-block; padding: 2px 9px; border-radius: 999px;
+  font-size: 0.75rem; font-weight: 700; color: #fff;
+}
+.badge.skt { background: var(--skt); }
+.badge.kt { background: var(--kt); }
+.badge.lg-uplus { background: var(--lg-uplus); }
+
+/* briefing detail */
+.brief-head { margin: 8px 0 4px; }
+.brief-head h2 { margin: 6px 0 4px; font-size: 1.4rem; }
+.brief-head .summary { color: #3d4653; margin: 6px 0 0; }
+.warn {
+  background: #fdf3e7; border: 1px solid #f0d9b8; color: #8a5a19;
+  border-radius: 10px; padding: 10px 14px; margin: 14px 0; font-size: 0.9rem;
+}
+section.kind { margin-top: 26px; }
+section.kind > h3 {
+  font-size: 1rem; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 2px solid var(--line);
+}
+section.kind.highlight > h3 { border-color: #e8b93c; }
+section.kind.new > h3 { border-color: var(--new); }
+section.kind.closing > h3 { border-color: var(--closing); }
+
+.item {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  padding: 12px 16px; margin-bottom: 10px;
+}
+.item .title { font-weight: 600; }
+.item .summary { font-size: 0.9rem; color: #3d4653; margin-top: 3px; }
+.item .info { font-size: 0.82rem; color: var(--muted); margin-top: 6px; display: flex; gap: 12px; flex-wrap: wrap; }
+.item .note { font-size: 0.85rem; color: #6b5900; background: #fbf6df; border-radius: 6px; padding: 4px 8px; margin-top: 8px; display: inline-block; }
+.dday { font-weight: 700; color: var(--closing); }
+
+.nav-links {
+  display: flex; gap: 10px; flex-wrap: wrap; margin: 26px 0 0; padding-top: 16px;
+  border-top: 1px solid var(--line); font-size: 0.9rem;
+}
+.nav-links .spacer { flex: 1; }
+
+.empty { color: var(--muted); text-align: center; padding: 60px 0; }
+footer { margin-top: 48px; font-size: 0.8rem; color: var(--muted); }

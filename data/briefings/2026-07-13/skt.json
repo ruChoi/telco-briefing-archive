@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-13",
+  "carrier": "skt",
+  "carrier_label": "SKT",
+  "title": "7/13 SKT 브리핑",
+  "summary": "신규 1건. 서울랜드 T 멤버십 50% 할인 신규 게시, 나머지 진행 중 이벤트 변동 없음.",
+  "generated_at": "2026-07-13T08:25:00+09:00",
+  "sections": [
+    {
+      "kind": "new",
+      "items": [
+        {
+          "title": "T 멤버십 × 서울랜드 50% 특별 할인",
+          "summary": "T 멤버십 × 서울랜드 50% 특별 할인",
+          "period": { "start": "2026-07-13", "end": "2026-08-31" },
+          "url": "https://m.tworld.co.kr/tevent/ing",
+          "source": "T world 이벤트"
+        }
+      ]
+    },
+    {
+      "kind": "closing",
+      "items": []
+    },
+    {
+      "kind": "ongoing",
+      "items": [
+        {
+          "title": "여름맞이 데이터 쿠폰 이벤트",
+          "summary": "여름맞이 데이터 쿠폰 이벤트",
+          "period": { "start": "2026-07-01", "end": "2026-08-31" },
+          "url": "https://m.tworld.co.kr/tevent/ing",
+          "source": "T world 이벤트"
+        },
+        {
+          "title": "OO 경품 응모 이벤트",
+          "summary": "OO 경품 응모 이벤트",
+          "period": { "start": "2026-06-15", "end": "2026-07-15" },
+          "url": "https://m.tworld.co.kr/tevent/ing",
+          "source": "T world 이벤트"
+        },
+        {
+          "title": "T 멤버십 영화 예매 할인",
+          "summary": "T 멤버십 영화 예매 할인",
+          "period": { "start": "2026-07-01", "end": "2026-07-31" },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택"
+        },
+        {
+          "title": "신규 가입 웰컴 기프트",
+          "summary": "신규 가입 웰컴 기프트",
+          "period": { "start": "2026-06-01", "end": "2026-09-30" },
+          "url": "https://m.tworld.co.kr/tevent/ing",
+          "source": "T world 이벤트"
+        }
+      ]
+    }
+  ],
+  "failed_sources": []
+}

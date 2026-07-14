@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>통신사 혜택 브리핑 아카이브</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <h1><a href="./">📮 통신사 혜택 브리핑</a></h1>
+    <span class="sub">KT · LG U+ · SKT 이벤트/멤버십 혜택 데일리 브리핑</span>
+    <nav><a href="about.html">소개</a></nav>
+  </header>
+
+  <div class="tabs" id="tabs"></div>
+  <div id="list"><p class="empty">불러오는 중…</p></div>
+
+  <footer>혜택 내용은 각 사 공지 기준이며 변동될 수 있습니다. <a href="about.html">자세히</a></footer>
+</div>
+
+<script src="assets/common.js"></script>
+<script>
+const FILTERS = [["all", "전체"], ["kt", "KT"], ["lg-uplus", "LG U+"], ["skt", "SKT"]];
+let index = null;
+
+function currentFilter() {
+  return new URLSearchParams(location.search).get("carrier") || "all";
+}
+
+function setFilter(c) {
+  const url = c === "all" ? location.pathname : `${location.pathname}?carrier=${c}`;
+  history.pushState({}, "", url);
+  render();
+}
+
+function renderTabs() {
+  const cur = currentFilter();
+  const tabs = document.getElementById("tabs");
+  tabs.innerHTML = "";
+  for (const [code, label] of FILTERS) {
+    const b = el("button", { class: code === cur ? "active" : "" }, label);
+    b.onclick = () => setFilter(code);
+    tabs.appendChild(b);
+  }
+}
+
+function card(b) {
+  const a = el("a", { class: "card", href: `briefing.html?date=${b.date}&carrier=${b.carrier}` });
+  a.appendChild(el("div", { class: "meta" },
+    el("span", { class: `badge ${b.carrier}` }, b.carrier_label || CARRIERS[b.carrier] || b.carrier),
+    el("span", {}, fmtDate(b.date))));
+  a.appendChild(el("h3", {}, b.title));
+  a.appendChild(el("p", {}, b.summary || ""));
+  const c = b.counts || {};
+  a.appendChild(el("div", { class: "counts" },
+    el("span", { class: "new" }, `신규 ${c.new ?? 0}`), " · ",
+    el("span", { class: "closing" }, `마감임박 ${c.closing ?? 0}`), " · ",
+    el("span", {}, `진행중 ${c.ongoing ?? 0}`)));
+  return a;
+}
+
+function render() {
+  renderTabs();
+  const cur = currentFilter();
+  const listEl = document.getElementById("list");
+  listEl.innerHTML = "";
+  if (!index) return;
+
+  let rows = index.briefings.slice()
+    .sort((x, y) => y.date.localeCompare(x.date) || x.carrier.localeCompare(y.carrier));
+  if (cur !== "all") rows = rows.filter(b => b.carrier === cur);
+
+  if (!rows.length) {
+    listEl.appendChild(el("p", { class: "empty" }, "브리핑이 없습니다."));
+    return;
+  }
+  // 월별 그룹핑
+  const byMonth = new Map();
+  for (const b of rows) {
+    const m = b.date.slice(0, 7);
+    if (!byMonth.has(m)) byMonth.set(m, []);
+    byMonth.get(m).push(b);
+  }
+  for (const [month, items] of byMonth) {
+    const g = el("div", { class: "month-group" });
+    g.appendChild(el("h2", {}, month.replace("-", "년 ") + "월"));
+    const grid = el("div", { class: "cards" });
+    items.forEach(b => grid.appendChild(card(b)));
+    g.appendChild(grid);
+    listEl.appendChild(g);
+  }
+}
+
+window.onpopstate = render;
+fetchJSON("data/index.json")
+  .then(d => { index = d; render(); })
+  .catch(e => {
+    document.getElementById("list").innerHTML =
+      `<p class="empty">인덱스를 불러오지 못했습니다.<br>${e.message}</p>`;
+  });
+</script>
+</body>
+</html>

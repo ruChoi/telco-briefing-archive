@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>브리핑 — 통신사 혜택 브리핑 아카이브</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <h1><a href="./">📮 통신사 혜택 브리핑</a></h1>
+    <nav><a href="./">← 목록</a></nav>
+  </header>
+
+  <div id="content"><p class="empty">불러오는 중…</p></div>
+
+  <footer>혜택 내용은 각 사 공지 기준이며 변동될 수 있습니다. <a href="about.html">자세히</a></footer>
+</div>
+
+<script src="assets/common.js"></script>
+<script>
+const params = new URLSearchParams(location.search);
+const date = params.get("date");
+const carrier = params.get("carrier");
+
+function itemEl(it, baseDate) {
+  const box = el("div", { class: "item" });
+  box.appendChild(el("div", { class: "title" },
+    el("a", { href: it.url || "#", target: "_blank", rel: "noopener noreferrer" }, it.title)));
+  if (it.summary && it.summary !== it.title) box.appendChild(el("div", { class: "summary" }, it.summary));
+  const info = el("div", { class: "info" });
+  const period = fmtPeriod(it.period);
+  if (period) {
+    const d = it.period && it.period.end ? dday(it.period.end, baseDate) : null;
+    const urgent = d === "D-DAY" || d === "D-1" || d === "D-2" || d === "D-3";
+    info.appendChild(el("span", {}, `기간 ${period} `, d ? el("span", { class: urgent ? "dday" : "" }, d) : null));
+  }
+  if (it.source) info.appendChild(el("span", {}, `출처: ${it.source}`));
+  box.appendChild(info);
+  if (it.note) box.appendChild(el("div", { class: "note" }, `📝 ${it.note}`));
+  return box;
+}
+
+function render(b, index) {
+  document.title = `${b.title} — 통신사 혜택 브리핑 아카이브`;
+  const c = document.getElementById("content");
+  c.innerHTML = "";
+
+  const head = el("div", { class: "brief-head" });
+  head.appendChild(el("div", {},
+    el("span", { class: `badge ${b.carrier}` }, b.carrier_label || CARRIERS[b.carrier] || b.carrier),
+    " ", el("span", { class: "sub" }, fmtDate(b.date))));
+  head.appendChild(el("h2", {}, b.title));
+  if (b.summary) head.appendChild(el("p", { class: "summary" }, b.summary));
+  c.appendChild(head);
+
+  if (b.failed_sources && b.failed_sources.length) {
+    c.appendChild(el("div", { class: "warn" },
+      `⚠️ 일부 소스 수집 실패 — 아래 목록에 누락이 있을 수 있습니다: ${b.failed_sources.join(", ")}`));
+  }
+
+  for (const sec of b.sections || []) {
+    if (!sec.items || !sec.items.length) continue;
+    const s = el("section", { class: `kind ${sec.kind}` });
+    s.appendChild(el("h3", {}, KIND_LABEL[sec.kind] || sec.kind));
+    sec.items.forEach(it => s.appendChild(itemEl(it, b.date)));
+    c.appendChild(s);
+  }
+
+  // 내비게이션: 같은 회사 전일/익일 + 같은 날짜 타사
+  if (index) {
+    const all = index.briefings;
+    const sameCarrier = all.filter(x => x.carrier === b.carrier).sort((x, y) => x.date.localeCompare(y.date));
+    const i = sameCarrier.findIndex(x => x.date === b.date);
+    const prev = i > 0 ? sameCarrier[i - 1] : null;
+    const next = i >= 0 && i < sameCarrier.length - 1 ? sameCarrier[i + 1] : null;
+    const others = all.filter(x => x.date === b.date && x.carrier !== b.carrier);
+
+    const nav = el("div", { class: "nav-links" });
+    if (prev) nav.appendChild(el("a", { href: `briefing.html?date=${prev.date}&carrier=${prev.carrier}` }, `← ${prev.date}`));
+    if (next) nav.appendChild(el("a", { href: `briefing.html?date=${next.date}&carrier=${next.carrier}` }, `${next.date} →`));
+    nav.appendChild(el("span", { class: "spacer" }));
+    others.forEach(o => nav.appendChild(
+      el("a", { href: `briefing.html?date=${o.date}&carrier=${o.carrier}` }, `같은 날 ${o.carrier_label || o.carrier}`)));
+    c.appendChild(nav);
+  }
+}
+
+if (!date || !carrier) {
+  document.getElementById("content").innerHTML = '<p class="empty">잘못된 주소입니다. <a href="./">목록으로</a></p>';
+} else {
+  Promise.all([
+    fetchJSON(`data/briefings/${date}/${carrier}.json`),
+    fetchJSON("data/index.json").catch(() => null),
+  ])
+    .then(([b, idx]) => render(b, idx))
+    .catch(() => {
+      document.getElementById("content").innerHTML =
+        '<p class="empty">해당 브리핑을 찾을 수 없습니다. <a href="./">목록으로</a></p>';
+    });
+}
+</script>
+</body>
+</html>
