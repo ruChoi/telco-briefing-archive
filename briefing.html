@@ -9,7 +9,7 @@
 <body>
 <div class="wrap">
   <header class="site">
-    <h1><a href="./">📮 통신사 혜택 브리핑</a></h1>
+    <h1><a href="./">통신사 혜택 브리핑</a></h1>
     <nav><a href="./">← 목록</a></nav>
   </header>
 
@@ -38,7 +38,7 @@ function itemEl(it, baseDate) {
   }
   if (it.source) info.appendChild(el("span", {}, `출처: ${it.source}`));
   box.appendChild(info);
-  if (it.note) box.appendChild(el("div", { class: "note" }, `📝 ${it.note}`));
+  if (it.note) box.appendChild(el("div", { class: "note" }, `메모 — ${it.note}`));
   return box;
 }
 
@@ -57,7 +57,7 @@ function render(b, index) {
 
   if (b.failed_sources && b.failed_sources.length) {
     c.appendChild(el("div", { class: "warn" },
-      `⚠️ 일부 소스 수집 실패 — 아래 목록에 누락이 있을 수 있습니다: ${b.failed_sources.join(", ")}`));
+      `일부 소스 수집 실패 — 아래 목록에 누락이 있을 수 있습니다: ${b.failed_sources.join(", ")}`));
   }
 
   for (const sec of b.sections || []) {

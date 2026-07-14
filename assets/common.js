@@ -1,7 +1,7 @@
 /* 아카이브 공통 유틸 — index.json/브리핑 JSON을 읽어 렌더링 (빌드 불필요) */
 
 const CARRIERS = { skt: "SKT", kt: "KT", "lg-uplus": "LG U+" };
-const KIND_LABEL = { highlight: "⭐ 오늘의 하이라이트", new: "🆕 신규", closing: "⏰ 마감 임박", ongoing: "진행 중" };
+const KIND_LABEL = { highlight: "오늘의 하이라이트", new: "신규", closing: "마감 임박", ongoing: "진행 중" };
 const DOW = ["일", "월", "화", "수", "목", "금", "토"];
 
 // GitHub Pages(하위 경로)와 로컬 서버 양쪽에서 동작하도록 상대 경로 기준
