@@ -4,12 +4,22 @@
   "carrier": "skt",
   "carrier_label": "SKT",
   "title": "7/14 SKT 브리핑",
-  "summary": "신규 13건 · 마감 임박 11건 · 진행 중 0건.",
-  "generated_at": "2026-07-14T16:56:30+09:00",
+  "summary": "신규 24건 · 마감 임박 0건 · 진행 중 0건.",
+  "generated_at": "2026-07-14T17:01:06+09:00",
   "sections": [
     {
       "kind": "new",
       "items": [
+        {
+          "title": "T 멤버십 × 서울랜드 T 멤버십 고객님 50% 특별 할인",
+          "summary": "T 멤버십 × 서울랜드 T 멤버십 고객님 50% 특별 할인",
+          "period": {
+            "start": "2026-07-01",
+            "end": "2026-08-31"
+          },
+          "url": "https://m.tworld.co.kr/tevent/ing",
+          "source": "T world 이벤트"
+        },
         {
           "title": "T 멤버십 2026년, 새로 추가된 T 멤버십 제휴사를 만나 보세요! 오붓, 해커스, 플래시백 계림, 후지필름몰, 더벤티, 루덴시아",
           "summary": "T 멤버십 2026년, 새로 추가된 T 멤버십 제휴사를 만나 보세요! 오붓, 해커스, 플래시백 계림, 후지필름몰, 더벤티, 루덴시아",
@@ -19,6 +29,118 @@
           },
           "url": "https://m.tworld.co.kr/tevent/ing",
           "source": "T world 이벤트"
+        },
+        {
+          "title": "럭키찬스 5성급 호텔 1박 티켓 응모 이벤트",
+          "summary": "럭키찬스 5성급 호텔 1박 티켓 응모 이벤트 — T 멤버십과 함께 호캉스 떠나 보세요!",
+          "period": {
+            "start": "2026-07-13",
+            "end": "2026-07-17"
+          },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택",
+          "target": "VIP"
+        },
+        {
+          "title": "캐리비안 베이 대인 종일권 50% 할인+자켓 대여 무료",
+          "summary": "캐리비안 베이 대인 종일권 50% 할인+자켓 대여 무료 — 뜨거운 여름, COOL한 캐리비안 베이",
+          "period": {
+            "start": "2026-07-13",
+            "end": "2026-07-17"
+          },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택"
+        },
+        {
+          "title": "오션월드 이용권 50% 할인",
+          "summary": "오션월드 이용권 50% 할인 — 오션월드는 언제나 신의 한 수지!",
+          "period": {
+            "start": "2026-07-13",
+            "end": "2026-07-17"
+          },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택"
+        },
+        {
+          "title": "공차 시즌 음료 3종+인기 음료 3종 50% 할인/적립",
+          "summary": "공차 시즌 음료 3종+인기 음료 3종 50% 할인/적립 — 공들여 더하는 행복, 프리미엄 티 공차",
+          "period": {
+            "start": "2026-07-13",
+            "end": "2026-07-17"
+          },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택",
+          "target": "VIP"
+        },
+        {
+          "title": "백미당 아이스크림 1+1",
+          "summary": "백미당 아이스크림 1+1 — 프리미엄 아이스크림&커피 브랜드, 백미당",
+          "period": {
+            "start": "2026-07-13",
+            "end": "2026-07-17"
+          },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택"
+        },
+        {
+          "title": "럭키찬스 이니스프리 100% 당첨 랜덤 추첨 이벤트",
+          "summary": "럭키찬스 이니스프리 100% 당첨 랜덤 추첨 이벤트 — 레티놀 PDRN 100% 당첨",
+          "period": {
+            "start": "2026-07-13",
+            "end": "2026-07-17"
+          },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택"
+        },
+        {
+          "title": "아로마티카 30,000원 이상 구매 시 20,000원 할인",
+          "summary": "아로마티카 30,000원 이상 구매 시 20,000원 할인 — 아로마티카와 함께 준비하는 시원한 여름",
+          "period": {
+            "start": "2026-07-13",
+            "end": "2026-07-17"
+          },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택"
+        },
+        {
+          "title": "슬로우캘리 대표 메뉴 5,000원 할인",
+          "summary": "슬로우캘리 대표 메뉴 5,000원 할인 — 나를 아끼는 건강하고 맛있는 습관, 슬로우캘리",
+          "period": {
+            "start": "2026-07-13",
+            "end": "2026-07-17"
+          },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택"
+        },
+        {
+          "title": "디자인밀 식단 관리 상품 최대 50% 할인",
+          "summary": "디자인밀 식단 관리 상품 최대 50% 할인 — 칼로리 관리부터 단백질 보충까지! 지속 가능한 식생활 루틴",
+          "period": {
+            "start": "2026-07-13",
+            "end": "2026-07-17"
+          },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택"
+        },
+        {
+          "title": "티젠 최대 50% 할인",
+          "summary": "티젠 최대 50% 할인 — 7억 스틱 판매 돌파! 티젠 콤부차, 여름제철 콤부차/애사비/아이스티 등 최저가 보장",
+          "period": {
+            "start": "2026-07-13",
+            "end": "2026-07-17"
+          },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택"
+        },
+        {
+          "title": "오붓(obud) 오붓 웰니스 패스 추가 30% 할인",
+          "summary": "오붓(obud) 오붓 웰니스 패스 추가 30% 할인 — 요가, 필라테스, 헬스, 발레 등 20가지 운동 자유이용권",
+          "period": {
+            "start": "2026-07-13",
+            "end": "2026-07-17"
+          },
+          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
+          "source": "T day/0 week 혜택"
         },
         {
           "title": "아웃백 스테이크하우스 25% 할인/적립",
@@ -134,120 +256,7 @@
     },
     {
       "kind": "closing",
-      "items": [
-        {
-          "title": "럭키찬스 5성급 호텔 1박 티켓 응모 이벤트",
-          "summary": "럭키찬스 5성급 호텔 1박 티켓 응모 이벤트 — T 멤버십과 함께 호캉스 떠나 보세요!",
-          "period": {
-            "start": "2026-07-13",
-            "end": "2026-07-17"
-          },
-          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
-          "source": "T day/0 week 혜택",
-          "target": "VIP"
-        },
-        {
-          "title": "캐리비안 베이 대인 종일권 50% 할인+자켓 대여 무료",
-          "summary": "캐리비안 베이 대인 종일권 50% 할인+자켓 대여 무료 — 뜨거운 여름, COOL한 캐리비안 베이",
-          "period": {
-            "start": "2026-07-13",
-            "end": "2026-07-17"
-          },
-          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
-          "source": "T day/0 week 혜택"
-        },
-        {
-          "title": "오션월드 이용권 50% 할인",
-          "summary": "오션월드 이용권 50% 할인 — 오션월드는 언제나 신의 한 수지!",
-          "period": {
-            "start": "2026-07-13",
-            "end": "2026-07-17"
-          },
-          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
-          "source": "T day/0 week 혜택"
-        },
-        {
-          "title": "공차 시즌 음료 3종+인기 음료 3종 50% 할인/적립",
-          "summary": "공차 시즌 음료 3종+인기 음료 3종 50% 할인/적립 — 공들여 더하는 행복, 프리미엄 티 공차",
-          "period": {
-            "start": "2026-07-13",
-            "end": "2026-07-17"
-          },
-          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
-          "source": "T day/0 week 혜택",
-          "target": "VIP"
-        },
-        {
-          "title": "백미당 아이스크림 1+1",
-          "summary": "백미당 아이스크림 1+1 — 프리미엄 아이스크림&커피 브랜드, 백미당",
-          "period": {
-            "start": "2026-07-13",
-            "end": "2026-07-17"
-          },
-          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
-          "source": "T day/0 week 혜택"
-        },
-        {
-          "title": "럭키찬스 이니스프리 100% 당첨 랜덤 추첨 이벤트",
-          "summary": "럭키찬스 이니스프리 100% 당첨 랜덤 추첨 이벤트 — 레티놀 PDRN 100% 당첨",
-          "period": {
-            "start": "2026-07-13",
-            "end": "2026-07-17"
-          },
-          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
-          "source": "T day/0 week 혜택"
-        },
-        {
-          "title": "아로마티카 30,000원 이상 구매 시 20,000원 할인",
-          "summary": "아로마티카 30,000원 이상 구매 시 20,000원 할인 — 아로마티카와 함께 준비하는 시원한 여름",
-          "period": {
-            "start": "2026-07-13",
-            "end": "2026-07-17"
-          },
-          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
-          "source": "T day/0 week 혜택"
-        },
-        {
-          "title": "슬로우캘리 대표 메뉴 5,000원 할인",
-          "summary": "슬로우캘리 대표 메뉴 5,000원 할인 — 나를 아끼는 건강하고 맛있는 습관, 슬로우캘리",
-          "period": {
-            "start": "2026-07-13",
-            "end": "2026-07-17"
-          },
-          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
-          "source": "T day/0 week 혜택"
-        },
-        {
-          "title": "디자인밀 식단 관리 상품 최대 50% 할인",
-          "summary": "디자인밀 식단 관리 상품 최대 50% 할인 — 칼로리 관리부터 단백질 보충까지! 지속 가능한 식생활 루틴",
-          "period": {
-            "start": "2026-07-13",
-            "end": "2026-07-17"
-          },
-          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
-          "source": "T day/0 week 혜택"
-        },
-        {
-          "title": "티젠 최대 50% 할인",
-          "summary": "티젠 최대 50% 할인 — 7억 스틱 판매 돌파! 티젠 콤부차, 여름제철 콤부차/애사비/아이스티 등 최저가 보장",
-          "period": {
-            "start": "2026-07-13",
-            "end": "2026-07-17"
-          },
-          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
-          "source": "T day/0 week 혜택"
-        },
-        {
-          "title": "오붓(obud) 오붓 웰니스 패스 추가 30% 할인",
-          "summary": "오붓(obud) 오붓 웰니스 패스 추가 30% 할인 — 요가, 필라테스, 헬스, 발레 등 20가지 운동 자유이용권",
-          "period": {
-            "start": "2026-07-13",
-            "end": "2026-07-17"
-          },
-          "url": "https://sktmembership.tworld.co.kr/mps/pc-bff/program/tday.do",
-          "source": "T day/0 week 혜택"
-        }
-      ]
+      "items": []
     },
     {
       "kind": "ongoing",

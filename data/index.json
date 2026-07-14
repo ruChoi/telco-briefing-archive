@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-14T16:56:30+09:00",
+  "updated_at": "2026-07-14T17:01:07+09:00",
   "briefings": [
     {
       "date": "2026-07-14",
       "carrier": "skt",
       "carrier_label": "SKT",
       "title": "7/14 SKT 브리핑",
-      "summary": "신규 13건 · 마감 임박 11건 · 진행 중 0건.",
+      "summary": "신규 24건 · 마감 임박 0건 · 진행 중 0건.",
       "counts": {
-        "new": 12,
-        "closing": 11,
+        "new": 24,
+        "closing": 0,
         "ongoing": 0
       },
       "path": "data/briefings/2026-07-14/skt.json"
@@ -19,10 +19,10 @@
       "carrier": "lg-uplus",
       "carrier_label": "LG U+",
       "title": "7/14 LG U+ 브리핑",
-      "summary": "신규 58건 · 마감 임박 1건 · 진행 중 0건. 오늘 챙길 것: [로밍] 5G커버리지 100개국 달성 기념이벤트.",
+      "summary": "신규 59건 · 마감 임박 0건 · 진행 중 0건. 오늘 챙길 것: [로밍] 5G커버리지 100개국 달성 기념이벤트.",
       "counts": {
-        "new": 58,
-        "closing": 1,
+        "new": 59,
+        "closing": 0,
         "ongoing": 0
       },
       "path": "data/briefings/2026-07-14/lg-uplus.json"
